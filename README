@@ -1,0 +1,42 @@
+Sidebar Content extension
+
+        Version 0.1
+        Yaron Koren
+
+This is free software licensed under the GNU General Public License. Please
+see https://www.gnu.org/copyleft/gpl.html for further details, including the
+full text and terms of the license.
+
+== Overview ==
+
+Sidebar Content is an extension to MediaWiki that allows you to define
+additional content that goes into the sidebar, via pages in the MediaWiki:
+namespace. To add a section, choose a "portlet" in the sidebar (an element
+with class "mw-portlet") under which you want to place your content, get
+its name (its ID will be "p-PortletName"), create page in the MediaWiki
+namespace with the new content (e.g., "MediaWiki:NewContent"), and then
+add the following to LocalSettings.php, below the inclusion of Sidebar
+Content:
+
+$wgSidebarContentMessages['PortletName'] = 'NewContent';
+
+For more information, see the extension homepage at:
+https://www.mediawiki.org/wiki/Extension:Sidebar_Content
+
+== Requirements ==
+
+This version of the Sidebar Content extension requires MediaWiki 1.32 or higher.
+
+== Installation ==
+
+To install the extension, place the entire 'SidebarContent' directory within
+your MediaWiki 'extensions' directory, then add the following line to your
+LocalSettings.php file:
+
+     wfLoadExtension( 'SidebarContent' );
+
+== Contact ==
+
+Comments, questions, suggestions and bug reports are welcome, and can
+be placed on the Talk page for the extension, or sent to Yaron at
+yaron57@gmail.com.

@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yaron Koren"
+		]
+	},
+	"sidebarcontent-desc": "Allows for adding additional wikitext content to the sidebar"
+}
